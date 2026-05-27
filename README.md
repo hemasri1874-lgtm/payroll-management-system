@@ -135,7 +135,7 @@ graph TB
 
 ### 🏠 Dashboard
 <div align="center">
-  <img src="./Screenshot.png" alt="Admin Dashboard" width="45%">
+  <img src="./Screenshot 2026-04-17 144929.png" alt="Admin Dashboard" width="45%">
 </div>
 
 ---
