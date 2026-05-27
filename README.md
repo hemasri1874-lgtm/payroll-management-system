@@ -135,7 +135,7 @@ graph TB
 
 ### 🏠 Dashboard
 <div align="center">
-  <img src="https://github.com/Sanjith7760/PayrollManagementSystem_Capestone_FullStackProject/blob/master/Screenshot%202025-09-02%20231157.png" alt="Admin Dashboard" width="45%">
+  <img src="./Screenshot.png" alt="Admin Dashboard" width="45%">
 </div>
 
 ---
