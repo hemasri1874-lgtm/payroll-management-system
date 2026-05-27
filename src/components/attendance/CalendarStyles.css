@@ -1,0 +1,94 @@
+/* CalendarStyles.css */
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+.rbc-calendar {
+    font-family: inherit;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 20px;
+    height: 100%;
+}
+
+.rbc-header {
+    padding: 12px 5px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.rbc-month-view {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rbc-day-bg {
+    transition: background-color 0.2s;
+}
+
+.rbc-day-bg:hover {
+    background-color: #f8f9fa;
+}
+
+.rbc-today {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.rbc-event {
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: 0.85rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.rbc-event.status-present {
+    background-color: #d1e7dd !important;
+    color: #0f5132 !important;
+    border-left: 3px solid #198754;
+}
+
+.rbc-event.status-leave {
+    background-color: #fff3cd !important;
+    color: #664d03 !important;
+    border-left: 3px solid #ffc107;
+}
+
+.rbc-toolbar {
+    margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+    border: 1px solid #dee2e6;
+    color: #495057;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.rbc-toolbar button:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.rbc-toolbar-label {
+    font-weight: 700;
+    color: #212529;
+    font-size: 1.25rem;
+}
+
+.rbc-off-range-bg {
+    background-color: #fcfcfc;
+}
