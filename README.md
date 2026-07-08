@@ -322,16 +322,5 @@ We welcome contributions! Please follow these steps:
 
 <div align="center">
 
-### 🌟 If you found this project helpful, please give it a star!
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/payroll-management-system?style=social)](https://github.com/yourusername/payroll-management-system/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/payroll-management-system?style=social)](https://github.com/yourusername/payroll-management-system/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/payroll-management-system)](https://github.com/yourusername/payroll-management-system/issues)
-
-**Made with ❤️ by [Sanjith Kumar H R](https://github.com/Sanjith7760)**
-
-*Happy Coding! 🚀*
-
-</div>
 
 ---
