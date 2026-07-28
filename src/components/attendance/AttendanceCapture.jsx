@@ -67,7 +67,7 @@ const AttendanceCapture = ({ onAttendanceMarked }) => {
 
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.post('http://localhost:8081/api/v1/attendance/mark', formData, {
+                const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1'}/attendance/mark`, formData, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'multipart/form-data'

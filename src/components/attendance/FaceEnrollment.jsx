@@ -68,7 +68,7 @@ const FaceEnrollment = ({ onEnrollmentComplete }) => {
                 const token = localStorage.getItem('token');
 
                 // 1. Get Employee ID
-                const employeeResponse = await axios.get(`http://localhost:8081/api/v1/employees/user/${user.id}`, {
+                const employeeResponse = await axios.get(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1'}/employees/user/${user.id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const employeeId = employeeResponse.data.employeeId;
@@ -77,7 +77,7 @@ const FaceEnrollment = ({ onEnrollmentComplete }) => {
                 const formData = new FormData();
                 formData.append('file', blob, 'enrollment.jpg');
 
-                await axios.post(`http://localhost:8081/api/v1/employees/${employeeId}/face-enrollment`, formData, {
+                await axios.post(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1'}/employees/${employeeId}/face-enrollment`, formData, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'multipart/form-data'

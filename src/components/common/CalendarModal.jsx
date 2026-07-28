@@ -20,7 +20,7 @@ const CalendarModal = ({ show, onClose }) => {
         try {
             setLoading(true);
             const token = localStorage.getItem('token');
-            const response = await axios.get('http://localhost:8081/api/attendance/history', {
+            const response = await axios.get(`${(import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1').replace('/v1', '')}/attendance/history`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
 

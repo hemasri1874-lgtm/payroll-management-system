@@ -38,7 +38,7 @@ const EmployeeDashboard = () => {
 
   const fetchAIWelcome = async () => {
     try {
-      const response = await fetch('http://localhost:8081/api/v1/auth/welcome-message', {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1'}/auth/welcome-message`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
           'Accept': 'text/plain'

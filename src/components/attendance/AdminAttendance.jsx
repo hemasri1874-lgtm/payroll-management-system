@@ -13,7 +13,7 @@ const AdminAttendance = () => {
         setError(null);
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.get(`http://localhost:8081/api/v1/attendance/daily?date=${date}`, {
+            const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api/v1'}/attendance/daily?date=${date}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setAttendanceList(response.data);
